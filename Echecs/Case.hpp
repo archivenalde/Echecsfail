@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Case_hpp
-#define Case_hpp
+#ifndef CASE_HPP
+#define CASE_HPP
 
 #include "Coord.hpp"
 
@@ -21,4 +21,4 @@ private:
     Piece *p;
 };
 
-#endif /* Case_hpp */
+#endif /* CASE_HPP */

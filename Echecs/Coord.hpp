@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Coord_hpp
-#define Coord_hpp
+#ifndef COORD_HPP
+#define COORD_HPP
 
 
 enum {A = 0, B, C, D, E, F, G, H};
@@ -35,4 +35,4 @@ private:
 };
 
 
-#endif /* Coord_hpp */
+#endif /* COORD_HPP */

@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Piece_hpp
-#define Piece_hpp
+#ifndef PIECE_HPP
+#define PIECE_HPP
 
 #include "Coord.hpp"
 #include "Case.hpp"
@@ -31,7 +31,7 @@ public:
     Coord getCoordonnees() const;
     
     //Fonctions virtuelles pures
-    virtual void MAJcasesAutorisees(Echiquier const& e) = 0;
+    virtual void MAJcasesAutorisees(Echiquier const&) = 0;
     virtual void deplacement() = 0;
     
 protected:
@@ -41,4 +41,59 @@ protected:
     std::vector<Case> casesAutorisees;
 };
 
-#endif /* Piece_hpp */
+
+
+class Cavalier : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+
+class Dame : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+
+class Fou : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+
+class Pion : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+
+class Roi : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+
+class Tour : public Piece {
+    
+public:
+    void MAJcasesAutorisees(Echiquier const&);
+    void deplacement();
+};
+
+
+#endif /* PIECE_HPP */

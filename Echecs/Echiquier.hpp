@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Echiquier_hpp
-#define Echiquier_hpp
+#ifndef ECHIQUIER_HPP
+#define ECHIQUIER_HPP
 
 #include "Case.hpp"
 
@@ -26,4 +26,4 @@ private:
     
 };
 
-#endif /* Echiquier_hpp */
+#endif /* ECHIQUIER_HPP */

@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Partie_hpp
-#define Partie_hpp
+#ifndef PARTIE_HPP
+#define PARTIE_HPP
 
 #include "Joueur.hpp"
 #include "Echiquier.hpp"
@@ -25,4 +25,4 @@ private:
 };
 
 
-#endif /* Partie_hpp */
+#endif /* PARTIE_HPP */

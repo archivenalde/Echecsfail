@@ -6,8 +6,8 @@
 //  Copyright © 2017 Adlane Ladjal. All rights reserved.
 //
 
-#ifndef Joueur_hpp
-#define Joueur_hpp
+#ifndef JOUEUR_HPP
+#define JOUEUR_HPP
 
 #include "Piece.hpp"
 
@@ -21,4 +21,4 @@ private:
     
 };
 
-#endif /* Joueur_hpp */
+#endif /* JOUEUR_HPP */
