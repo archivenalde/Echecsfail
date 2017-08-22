@@ -9,7 +9,6 @@
 #ifndef Coord_hpp
 #define Coord_hpp
 
-#include <stdio.h>
 
 enum {A = 0, B, C, D, E, F, G, H};
 

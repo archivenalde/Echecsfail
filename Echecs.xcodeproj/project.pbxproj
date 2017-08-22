@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F17556161F4CA54300E35482 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17556151F4CA54300E35482 /* main.cpp */; };
 		F175561E1F4CA5A400E35482 /* Coord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F175561C1F4CA5A400E35482 /* Coord.cpp */; };
+		F17556211F4CA80400E35482 /* Case.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F175561F1F4CA80400E35482 /* Case.cpp */; };
+		F17556241F4CA8E500E35482 /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17556221F4CA8E500E35482 /* Piece.cpp */; };
+		F17556271F4CAA3F00E35482 /* Echiquier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17556251F4CAA3F00E35482 /* Echiquier.cpp */; };
+		F175562A1F4CAC0200E35482 /* Joueur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17556281F4CAC0200E35482 /* Joueur.cpp */; };
+		F175562D1F4CAC6E00E35482 /* Partie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F175562B1F4CAC6E00E35482 /* Partie.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +33,16 @@
 		F17556151F4CA54300E35482 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F175561C1F4CA5A400E35482 /* Coord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coord.cpp; sourceTree = "<group>"; };
 		F175561D1F4CA5A400E35482 /* Coord.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coord.hpp; sourceTree = "<group>"; };
+		F175561F1F4CA80400E35482 /* Case.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Case.cpp; sourceTree = "<group>"; };
+		F17556201F4CA80400E35482 /* Case.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Case.hpp; sourceTree = "<group>"; };
+		F17556221F4CA8E500E35482 /* Piece.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
+		F17556231F4CA8E500E35482 /* Piece.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Piece.hpp; sourceTree = "<group>"; };
+		F17556251F4CAA3F00E35482 /* Echiquier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Echiquier.cpp; sourceTree = "<group>"; };
+		F17556261F4CAA3F00E35482 /* Echiquier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Echiquier.hpp; sourceTree = "<group>"; };
+		F17556281F4CAC0200E35482 /* Joueur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joueur.cpp; sourceTree = "<group>"; };
+		F17556291F4CAC0200E35482 /* Joueur.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Joueur.hpp; sourceTree = "<group>"; };
+		F175562B1F4CAC6E00E35482 /* Partie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Partie.cpp; sourceTree = "<group>"; };
+		F175562C1F4CAC6E00E35482 /* Partie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Partie.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,16 @@
 				F17556151F4CA54300E35482 /* main.cpp */,
 				F175561C1F4CA5A400E35482 /* Coord.cpp */,
 				F175561D1F4CA5A400E35482 /* Coord.hpp */,
+				F175561F1F4CA80400E35482 /* Case.cpp */,
+				F17556201F4CA80400E35482 /* Case.hpp */,
+				F17556221F4CA8E500E35482 /* Piece.cpp */,
+				F17556231F4CA8E500E35482 /* Piece.hpp */,
+				F17556251F4CAA3F00E35482 /* Echiquier.cpp */,
+				F17556261F4CAA3F00E35482 /* Echiquier.hpp */,
+				F17556281F4CAC0200E35482 /* Joueur.cpp */,
+				F17556291F4CAC0200E35482 /* Joueur.hpp */,
+				F175562B1F4CAC6E00E35482 /* Partie.cpp */,
+				F175562C1F4CAC6E00E35482 /* Partie.hpp */,
 			);
 			path = Echecs;
 			sourceTree = "<group>";
@@ -125,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17556241F4CA8E500E35482 /* Piece.cpp in Sources */,
+				F17556211F4CA80400E35482 /* Case.cpp in Sources */,
 				F17556161F4CA54300E35482 /* main.cpp in Sources */,
+				F175562A1F4CAC0200E35482 /* Joueur.cpp in Sources */,
+				F17556271F4CAA3F00E35482 /* Echiquier.cpp in Sources */,
 				F175561E1F4CA5A400E35482 /* Coord.cpp in Sources */,
+				F175562D1F4CAC6E00E35482 /* Partie.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
