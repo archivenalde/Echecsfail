@@ -20,15 +20,15 @@
 class Piece {
     
 public:
-    Piece(bool couleurPiece, std::string nomPiece, Coord coordPiece);
-    
-    //Setteurs
-    void setCoordonnees(Coord coordPiece);
+    Piece(bool couleurPiece, Coord coordPiece, std::string nomPiece);
     
     //Getteurs
     bool getCouleur() const;
     std::string getNom() const;
     Coord getCoordonnees() const;
+    
+    //Setteurs
+    void setCoordonnees(Coord coordPiece);
     
     //Fonctions virtuelles pures
     virtual void MAJcasesAutorisees(Echiquier const&) = 0;
@@ -46,6 +46,8 @@ protected:
 class Cavalier : public Piece {
     
 public:
+    Cavalier(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };
@@ -55,6 +57,8 @@ public:
 class Dame : public Piece {
     
 public:
+    Dame(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };
@@ -64,6 +68,8 @@ public:
 class Fou : public Piece {
     
 public:
+    Fou(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };
@@ -73,6 +79,8 @@ public:
 class Pion : public Piece {
     
 public:
+    Pion(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };
@@ -82,6 +90,8 @@ public:
 class Roi : public Piece {
     
 public:
+    Roi(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };
@@ -91,6 +101,8 @@ public:
 class Tour : public Piece {
     
 public:
+    Tour(bool couleurPiece, Coord coordPiece, std::string nomPiece);
+    
     void MAJcasesAutorisees(Echiquier const&);
     void deplacement();
 };

@@ -8,8 +8,8 @@
 
 #include "Piece.hpp"
 
-Piece::Piece(bool _coul, std::string _nom, Coord _c):
-coul(_coul), nom(_nom), c(_c)
+Piece::Piece(bool _coul, Coord _c, std::string _nom):
+coul(_coul), c(_c), nom(_nom)
 {
 }
 
@@ -35,3 +35,48 @@ Coord Piece::getCoordonnees() const
 {
     return c;
 }
+
+
+
+//Cavalier
+Cavalier::Cavalier(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+//Dame
+Dame::Dame(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+
+//Fou
+Fou::Fou(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+
+//Pion
+Pion::Pion(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+
+//Roi
+Roi::Roi(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+
+//Tour
+Tour::Tour(bool _coul, Coord _c, std::string _nom):
+Piece(_coul, _c, _nom)
+{
+}
+
+
+
