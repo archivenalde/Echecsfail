@@ -20,7 +20,6 @@ class Echiquier {
     
 private:
     Case plateau[NBL][NBC_BUFFER];
-    Piece pieces[2][16]; //Piece[0] -> Pieces blanches, Piece[1] -> Pieces noires
     int nbPieces; //Pieces sur le plateau au cours d'une partie
     int nbPiecesB; //Pieces blanches sur le plateau au cours d'une partie
     int nbPiecesN; //Pieces noires sur le plateau au cours d'une partie
