@@ -18,6 +18,9 @@
 
 class Echiquier {
     
+public:
+    Echiquier();
+    
 private:
     Case plateau[NBL][NBC_BUFFER];
     int nbPieces; //Pieces sur le plateau au cours d'une partie
