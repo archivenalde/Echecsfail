@@ -18,12 +18,29 @@ typedef e_etat_partie EtatPartie;
 
 class Partie {
     
+public:
+    Partie();
+    ~Partie(); //TODO ASAP
+    
+    //Getteurs
+    Joueur getJ0() const;
+    Joueur getJ1() const;
+    Echiquier getEchiquier() const;
+    EtatPartie getEtatPartie() const;
+    
+    //Setteurs
+    void setEtatPartie(EtatPartie);
+    
 private:
-    Joueur j1;
-    Joueur j2;
+    Joueur* j1;
+    Joueur* j0;
     Echiquier* e;
-    Piece* pieces[2][16]; //Piece[0] -> Pieces blanches, Piece[1] -> Pieces noires
+    Piece* materiel[2][16]; //Piece[0] -> Pieces noires, Piece[1] -> Pieces blanches
     EtatPartie ep;
+    
+    void definitionMateriel(bool couleur); //Routine pour definir le tableau "materiel"
+                                           //A appeler en 2 fois, pour chaque dimension du tableau
+    
 };
 
 

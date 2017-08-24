@@ -8,14 +8,12 @@
 
 #include "Echiquier.hpp"
 
-#define NB_PIECES_TOTAL_INIT
 
 Echiquier::Echiquier()
 {
     nbPieces = NB_PIECES_TOTAL_INIT;
-    nbPiecesB = NB_PIECES_TOTAL_INIT/2;
-    nbPiecesN = NB_PIECES_TOTAL_INIT/2;
-    
+    nbPiecesB = NB_PIECES_JOUEUR_INIT;
+    nbPiecesN = NB_PIECES_JOUEUR_INIT;
     
     bool couleur = false;
     bool occupe = true;
@@ -29,8 +27,6 @@ Echiquier::Echiquier()
                 occupe = false;
             else
                 occupe = true;
-            
-            Coord kase(i, j);
             
             plateau[i][j] = *(new Case( *(new Case(i,j)), couleur, occupe));
         }

@@ -16,17 +16,20 @@
 #define NBC 8
 #define NBC_BUFFER NBC + 1
 
+#define NB_PIECES_JOUEUR_INIT 16
+#define NB_PIECES_TOTAL_INIT NB_PIECES_JOUEUR_INIT * 2
+
 class Echiquier {
     
 public:
     Echiquier();
+    void placerPiece(); //TODO utiliser la methode setPieceSurCase.
     
 private:
     Case plateau[NBL][NBC_BUFFER];
     int nbPieces; //Pieces sur le plateau au cours d'une partie
     int nbPiecesB; //Pieces blanches sur le plateau au cours d'une partie
     int nbPiecesN; //Pieces noires sur le plateau au cours d'une partie
-    
     
 };
 
