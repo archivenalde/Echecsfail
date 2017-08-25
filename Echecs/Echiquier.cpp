@@ -28,7 +28,7 @@ Echiquier::Echiquier()
             else
                 occupe = true;
             
-            plateau[i][j] = *(new Case( *(new Case(i,j)), couleur, occupe));
+            plateau[i][j] = *(new Case(*(new Coord(i, j)), couleur, occupe));
         }
     }
 }

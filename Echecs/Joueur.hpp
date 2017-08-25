@@ -15,7 +15,8 @@
 class Joueur {
     
 public:
-    Joueur(bool couleurJoueur, Piece* materielPartie[2][NB_PIECES_JOUEUR_INIT]);
+    Joueur(bool couleurJoueur);
+    ~Joueur(); //TODO
     
     //Getteurs
     bool getCouleur() const;
@@ -23,13 +24,22 @@ public:
     bool estEchecEtMat() const;
     int getNbPieces() const;
     
+    //Setteurs
+    void setEchec(bool);
+    void setEchecEtMat(bool);
+    
+    void deplacerPiece(); //TODO utiliser la methode setPieceSurCase.
+
+    
 private:
     const bool couleur;
     bool echec;
     bool echecEtMat;
     
-    Piece* materiel[16];
+    Piece* materiel[NB_PIECES_JOUEUR_INIT];
     int nbPieces;
+    
+    void definitionMateriel(); //Routine pour definir le tableau "materiel"
     
 };
 

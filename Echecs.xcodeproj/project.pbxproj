@@ -285,6 +285,7 @@
 				F175561B1F4CA54300E35482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

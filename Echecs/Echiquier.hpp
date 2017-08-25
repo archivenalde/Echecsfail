@@ -23,7 +23,6 @@ class Echiquier {
     
 public:
     Echiquier();
-    void placerPiece(); //TODO utiliser la methode setPieceSurCase.
     
 private:
     Case plateau[NBL][NBC_BUFFER];

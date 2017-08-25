@@ -39,6 +39,7 @@ protected:
     const std::string nom;
     Coord c;
     std::vector<Case> casesAutorisees;
+    
 };
 
 
@@ -77,6 +78,10 @@ public:
 
 
 class Pion : public Piece {
+    
+private:
+    static int nbPions;
+    const int id;
     
 public:
     Pion(bool couleurPiece, Coord coordPiece, std::string nomPiece);

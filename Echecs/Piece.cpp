@@ -59,8 +59,10 @@ Piece(_coul, _c, _nom)
 
 
 //Pion
+int Pion::nbPions = 0;
+
 Pion::Pion(bool _coul, Coord _c, std::string _nom):
-Piece(_coul, _c, _nom)
+Piece(_coul, _c, _nom), id(nbPions+1)
 {
 }
 

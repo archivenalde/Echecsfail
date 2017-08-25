@@ -8,7 +8,7 @@
 
 #include "Joueur.hpp"
 
-Joueur::Joueur(bool _coul, Piece* _mat[2][NB_PIECES_JOUEUR_INIT]):
+Joueur::Joueur(bool _coul):
 couleur(_coul)
 {
     echec = false;
@@ -16,8 +16,31 @@ couleur(_coul)
     
     nbPieces = NB_PIECES_JOUEUR_INIT;
     
-    for (int i = 0; i < NB_PIECES_JOUEUR_INIT; ++i)
-        materiel[i] = _mat[(int)couleur][i];
+    definitionMateriel();
+}
+
+void Joueur::definitionMateriel()
+{
+    int i;
+    int zone = couleur ? 1 : 8;
+    int zonePions = couleur ? 2 : 7;
+    
+    materiel[0] = new Tour     (couleur, *(new Coord(A, zone)), "tour");
+    materiel[1] = new Cavalier (couleur, *(new Coord(B, zone)), "cavalier");
+    materiel[2] = new Fou      (couleur, *(new Coord(C, zone)), "fou");
+    materiel[3] = new Dame     (couleur, *(new Coord(D, zone)), "dame");
+    materiel[4] = new Roi      (couleur, *(new Coord(E, zone)), "roi");
+    materiel[5] = new Fou      (couleur, *(new Coord(F, zone)), "fou");
+    materiel[6] = new Cavalier (couleur, *(new Coord(G, zone)), "cavalier");
+    materiel[7] = new Tour     (couleur, *(new Coord(H, zone)), "tour");
+    
+    for(i = 8; i < NB_PIECES_JOUEUR_INIT; ++i)
+        materiel[i] = new Pion (couleur, *(new Coord(i - 8, zonePions)), "pion");
+}
+
+void Joueur::deplacerPiece()
+{
+    
 }
 
 
@@ -42,3 +65,15 @@ int Joueur::getNbPieces() const
     return nbPieces;
 }
 
+
+//Setteurs
+void Joueur::setEchec(bool e)
+{
+    echec = e;
+}
+
+
+void Joueur::setEchecEtMat(bool e)
+{
+    echecEtMat = e;
+}
